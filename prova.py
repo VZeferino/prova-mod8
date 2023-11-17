@@ -4,13 +4,13 @@ import re
 
 # Dicionário de intenções
 intent_patterns = {
-    'option1': re.compile(r'Quero consultar minha (.*)'), #testado com 'Quero consultar minha atualização de pagamento'
+    'option1': re.compile(r'Quero mudar minha (.*)'), #testado com 'Quero mudar minha atualização de pagamento'
     'option2': re.compile(r'Quero consultar o (.*)'), #testado com 'Quero consultar o status do pedido'
 }
 
 # Dicionário de ações
 def responseUpdate(prompt):
-    print(f"Entendido, consultarei a sua {prompt}")
+    print(f"Entendido, verei a situação da sua {prompt}")
 
 def responseFollow(prompt):
     print(f"Entendido, consultarei o {prompt}")
